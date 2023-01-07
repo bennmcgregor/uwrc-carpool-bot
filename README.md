@@ -21,3 +21,6 @@ Make sure you have the latest version of python3 installed on your computer. Bef
 Before doing any development:
 1. Run `source venv/bin/activate`
 2. Run the bot with the command `python3 src/main.py` and wait for a console message saying the bot has connected to discord.
+
+# Design
+See the following google doc for the requirements specification: [Requirements Spec](https://docs.google.com/document/d/1KWh2wQS-pd_3QAeoAu57z3wMd1gvF0N1F1J5ExJVGwE/edit?usp=sharing).
