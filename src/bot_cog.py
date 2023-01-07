@@ -196,8 +196,7 @@ class CarpoolBot(commands.Cog):
 
 
 
-
-
+    # temporary commands to be deleted after final deployment
 
     @commands.command(name="temp-create-metadata")
     async def _temp_create_metadata(

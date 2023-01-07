@@ -84,6 +84,3 @@ def parse_reminders(hours_before_release, reminder_offsets):
     except:
         pass
     raise CommandValidationError()
-
-if __name__ == "__main__":
-    print(parse_reminders(12, "10 8 5"))
