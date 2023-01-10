@@ -178,7 +178,20 @@ class CarpoolBot(commands.Cog):
             meta_data.carpool_calculation_method = CarpoolCalculationMethod.VARSITY_IN_NOVICE
         meta_data.save()
         await ctx.send(f'Successfully updated the carpool logic.')
-    
+
+    #New Command Written by robert-----------------------------------------------------------------------------------------------------
+    @commands.command(name="extract-carpool-data-admin", brief='Releases a list of all historical carpools')
+    async def _extract_carpool_data_admin(
+        self,
+        ctx,
+        #My understanding is that ctx is somehow checking the role of the user, as well as the channel is that correct?
+    ):
+        admin_validation(ctx)
+        channel_validation(ctx)
+        #Assumed I didn't nneed the get_current_user_data command since there is no data being taken in with this command, its just being spat out?
+        #Wasn't sure how to access the actual history of all carpools so just started with basically confirming that the command has been recieved
+        await ctx.send(f'Successfully released history of all past carpools')
+    #End of new command written by Robert-------------------------------------------------------------------------------------------
 
             
     @commands.Cog.listener()
